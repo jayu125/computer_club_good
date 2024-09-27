@@ -26,9 +26,8 @@ class Enemy(pygame.sprite.Sprite):
       self.move_delay = 6000  #밀리세컨드 단위
       self.ATK = 1
 
-      self.bullet_class = Enemy_aa
-      self.bullet_speed = 5.5
-      self.bullet_color = self.color["RED"]
+      self.aa_class = Enemy_aa
+      self.aa_color = self.color["RED"]
       self.aa_shoot_delay = 1000
       self.aa_size = 6
       self.aa_speed = 10
@@ -68,7 +67,7 @@ class Enemy(pygame.sprite.Sprite):
         if now - self.last_shoot >= self.shoot_delay:
             self.last_shoot = now
             # 총알 생성
-            bullet = self.bullet_class(self.game, self, self.rect.centerx, self.rect.centery)
+            aa = self.aa_class(self.game, self, self.rect.centerx, self.rect.centery)
 
         # 플레이어의 총알에 맞으면 죽음
         if pygame.sprite.spritecollide(self, self.game.player_attack, True):

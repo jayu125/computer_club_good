@@ -1,0 +1,18 @@
+{
+  "stages": [
+    {
+      "score_threshold": 0,
+      "enemies": [
+        { "type": "basic", "count": 2 },
+        { "type": "buff_item", "count": 2 }
+      ]
+    },
+    {
+      "score_threshold": 100,
+      "enemies": [
+        { "type": "fast", "count": 5 },
+        { "type": "basic", "count": 2 }
+      ]
+    }
+  ]
+}

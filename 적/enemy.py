@@ -75,6 +75,7 @@ class Enemy(pygame.sprite.Sprite):
             if self.life <= 0:
                 # self.game.score += 1
                 print("dead")
+                
                 # self.kill()
                 
 

@@ -21,11 +21,11 @@ class Player(pygame.sprite.Sprite):
         self.HP = 3
         self.ATK = 1
         self.move_speed = 4
-        self.aa_speed = 30
-        self.aa_shoot_delay = 30  #연사속도 0.05초
+        self.aa_speed = 5 #2가 기본값 6 넘기지 마셈
+        self.aa_shoot_delay = 50
         self.aa_size = 4 #기본값 2
         self.item = {
-            "double_attack" : True
+            "double_attack" : False
         }
 
 
